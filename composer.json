@@ -1,0 +1,41 @@
+{
+    "name": "funson86/yii2-adminlte",
+    "description": "Yii 2 Advanced Application Template with Adminlte Theme",
+    "keywords": ["yii2", "framework", "advanced", "application template", "Adminlte"],
+    "homepage": "https://github.com/funson86/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Funson Lee",
+            "email": "funson86@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "postor/yii2-for-sae": "*",
+        "funson86/yii2-setting": "*",
+        "funson86/yii2-cms": "*",
+        "funson86/yii2-blog": "*",
+        "funson86/yii2-auth": "*",
+        "funson86/yii2-gii": "*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}

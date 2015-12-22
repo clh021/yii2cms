@@ -1,0 +1,8 @@
+name: yongbushanchu
+version: 2
+handle:
+- rewrite: if(!is_file() && path~"^(.*)$") goto "/frontend/web/index.php/$1"
+- expire: if(path ~ ".js$") time 8640000
+- expire: if(path ~ ".css$") time 8640000
+- compress: if(out_header["Content-Length"] >= 500) compress
+- compress: if(out_header["Content-Type"] == "text/html") compress
